@@ -1,0 +1,22 @@
+Service Provideri koji simuliraju backend: Firebase, CloudKit, Backendless, Realm, Parse (Facebook ga ugasio).
+
+Swift [2014] => 1.0
+Swuft [2015] => 2.0 postaje open source i to je dalo mogucnost rada na serveru
+
+Swift Server Side Frameworks: Kitura, Vapor, Perfect
+
+1. Napravi folder sa nazivom koji nece pocinjati sa KITURA
+2. U terminalu => swift package init --type executable
+3. U Package.swift skini komentar sa linije 10 (.package.....) i upisi string url-a kiture na github-u
+		.package(url: "https://github.com/IBM-Swift/Kitura.git", from: "2.0.0")
+   ovde bi inace dodavao DI preko Swift Package Managera
+4. U Package.swift u .target => dopisi u => dependencies: ["Kitura"]
+5. U terminalu => swift build
+6. U terminalu => swift package generate-xcodeproj
+7. Odaberi semu /NAZIV PROJEKTA/ bez dodatka -PACKAGE i uradi build
+8. Posle bilo kog dodavanja u .package i u .dependencies[""] treba uraditi swift build i swift package generate-xcodeproj
+9. U ovom folderu dodaj novi folder, nezavisan, koji ce da se poveze na kreiran server(naravno ovaj mora prethodno raditi)
+10. Moze se hostovati na serverima koji podrzavaju linux platforme kao i swift runtime npr. ibm bluemix 
+https://medium.com/@azamsharp/deploying-kitura-swift-app-to-ibm-bluemix-c884fb3de164 
+
+
