@@ -3,7 +3,7 @@ Service Provideri koji simuliraju backend: Firebase, CloudKit, Backendless, Real
 Swift [2014] => 1.0
 Swuft [2015] => 2.0 postaje open source i to je dalo mogucnost rada na serveru
 
-Swift Server Side Frameworks: Kitura, Vapor, Perfect
+Swift Server Side Frameworks: Kitura, Vapor, Perfect, Zewo
 
 1. Napravi folder sa nazivom koji nece pocinjati sa KITURA
 2. U terminalu => swift package init --type executable
